@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+a:link {
+  text-decoration: none;
+}
+
+html {
+  font-size: 70%;	
+}
+
+body {
+background-color:  #101010;
+background-size: cover;
+color: #fff;
+text-align: center;
+font-size: 1.4rem;
+font-family: Meiryo; 
+}
+
+.header {
+  padding: 15px;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0 0px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 5rem;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+.heading::before {
+  bottom: 5px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  cursor: default;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: "";
+  display: inline-block;
+  width: 190px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 7.5rem;
+  cursor: default;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+  cursor: default;
+}
+
+.Files {
+    padding: 30px 0;
+    color: black;
+    cursor: default;
+    background-color: gray;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Files-DLC {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+
+
+.copyright {
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ContactMe {
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+#GoTopButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#GoTopButton:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.marqee {
+ height: 3em;
+ margin: 0 auto;
+ overflow: hidden; 
+ position: relative;
+ background: black;
+}
+
+.marqee > ul {
+ padding-left: 0;
+ display: flex;
+ list-style-type: none;
+ animation: marqee 15s linear infinite;
+ position: absolute;
+}
+
+.marqee > ul > li {
+ white-space: nowrap;
+ margin-right: 2em;
+ font-weight: bold;
+ color: yellow;
+}
+
+@keyframes marqee {
+ 0% {
+  left: 100%;
+  transform: translateX(0%);
+ }
+
+ 100% {
+  left: 0;
+  transform: translateX(-100%);
+ }
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+}
+

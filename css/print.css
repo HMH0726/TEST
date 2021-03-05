@@ -1,0 +1,27 @@
+@import url(print.css) print;
+
+.header {
+  padding-top: 20px;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {  
+  display: block;
+  width: 80px;
+  margin: 10px auto;
+}
+
+.site-title-sub {
+  font-size: 1.7rem;
+}
+
+.site-title {
+  margin-top: 35px;
+  font-size: 5rem;
+}
+
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.5rem;
+}
